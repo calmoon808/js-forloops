@@ -9,7 +9,7 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 for(var i = 1; i <= 20; i++){
-   console.log("Now serving " + i);
+   console.log("Now serving " + i + '.');
 }
 
 /* 2) Pop Charts
@@ -23,7 +23,7 @@ This week's chart buster is: '24K Magic.'
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
 for(var i = 0; i < topFive.length; i++){
-   console.log(topFive[i]);
+   console.log("This week's chart buster is: " + topFive[i]) + '.';
 }
 
 
@@ -48,13 +48,14 @@ This function will iterate through the person parameter and console.log the foll
 */
 var presidents = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
 for(var i = 0; i < presidents.length; i++){
-   console.log("The value at " + i + " is " + presidents[i]);
+   console.log("The value at " + i + " is " + presidents[i] + '.');
 }
 function leaders(person){
    for(var i = 0; i < person.length; i++){
       console.log("President " + person[i] + " was a great leader.");
    }
 }
+leaders(presidents);
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
@@ -86,7 +87,7 @@ Console.log your results.
 */
   
 var oddSum = 0;
-for(var i = 1; i <= 101; i += 2){
+for(var i = 1; i < 101; i += 2){
    oddSum += i;
 }
 console.log(oddSum);
